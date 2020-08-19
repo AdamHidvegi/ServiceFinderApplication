@@ -135,4 +135,8 @@ public class Job {
     public void setApplicants(List<Freelancer> applicants) {
         this.applicants = applicants;
     }
+
+    public void addFreelancer(Freelancer freelancer) {
+        this.applicants.add(freelancer);
+    }
 }

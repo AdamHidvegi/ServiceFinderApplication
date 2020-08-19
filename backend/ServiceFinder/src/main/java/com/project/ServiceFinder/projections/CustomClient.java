@@ -4,6 +4,7 @@ import com.project.ServiceFinder.models.Client;
 import com.project.ServiceFinder.models.Job;
 import org.springframework.data.rest.core.config.Projection;
 
+import java.util.Date;
 import java.util.List;
 
 @Projection(name = "customClient", types = Client.class)
@@ -13,4 +14,5 @@ public interface CustomClient {
     String getFirst_name();
     String getLast_name();
     List<Job> getPosted_jobs();
+    Date getRegistration_date();
 }
